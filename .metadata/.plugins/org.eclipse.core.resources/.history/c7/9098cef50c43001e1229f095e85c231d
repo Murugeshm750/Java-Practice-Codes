@@ -1,0 +1,22 @@
+package BeginnerJava;
+
+public class Demo 
+{
+	String Find(String s,char c1) 
+	{
+		char[]arr=s.toCharArray();
+		for (int i=0;i<=arr.length-1;)
+		{
+			if (c1==arr[i])
+			{
+				return "The Character present in the String";
+			}
+			else
+			{
+				return "The Character is not present in the String";
+			}
+		}
+		return s;
+	}
+
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(92, 99, 111, 0.8);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+}
+.head .navi a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+    position: relative;
+    font-weight:bold;
+}
+.head .navi a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: azure;
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.head .navi a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;   
+}
+.head .navi .btnpop{
+    margin-left: 40px;
+    margin-right: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 1.5px solid rgb(228, 221, 221);
+    border-radius: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #0808085f;
+}
+.wrapper{
+    width: 400px;
+    height: max-content;
+    border: 1px solid rgba(174, 153, 153, 0.539);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(25px);
+    background-color: rgba(254, 252, 252, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale();
+    transition: transform 0.5s ease;
+}
+.wrapper .active-popup{
+    transform: scale(1);
+}
+.wrapper .formBoxLogin{
+    width: 100%;
+    padding: 40px;
+}
+.exit{
+    top: 0;
+    position: absolute;
+    right: 0;
+    padding: 3px 5px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+.wrapper .formBoxLogin h2{
+    font-size: 2em;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    color: black;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: .5s;
+    font-size: 1.2em;
+    color: black;
+
+
+}
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label{
+    top: 1px;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: azure;
+    padding-bottom: 15px;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-register{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.login-register a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.login-register a:hover{
+    text-decoration: underline;
+}
+</style>
+<body>
+    <header class="head">
+        <div class="logo">
+        
+        </div>
+        <nav class="navi">
+            <a href="#">HOME</a>
+            <a href="#">CAREER</a>
+            <a href="#">CONTACT</a>
+            <a href="#">HELP</a>
+            <button class="btnpop">Login</button>
+
+        </nav>
+    </header>
+    <div class="wrapper">
+        <button value="exit" class="exit">X</button>
+        <div class="formBoxLogin">
+            <h2>Login</h2>
+            <form action="Login_Validation">
+                <div class="inputbox">
+                    <input type="text" name="username">
+                    <label>Username</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="password">
+                    <label>Paasword</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">  Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an Account? <a href="/Data_Enter/register.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+    	alert("Please Enter Valid Input !!!")
+    </script>
+</body>
+</html>

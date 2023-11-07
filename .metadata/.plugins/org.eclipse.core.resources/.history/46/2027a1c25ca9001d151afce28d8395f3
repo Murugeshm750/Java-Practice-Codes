@@ -1,0 +1,104 @@
+import java.sql.*;
+import java.util.Scanner;
+public class Project {
+	
+Scanner scan= new Scanner (System.in);
+	
+	Connection con;
+	Statement smt;
+	PreparedStatement pst;
+	ResultSet rs;
+
+	String insert="insert into Laptop values(?,?,?,?,?,?)";
+	String delete="delete from Laptop where id=?";
+	String display="select * from Laptop";
+	
+	
+	public void insert()
+	{
+		try {
+			System.out.println("Enter id of Laptop");
+			int id=scan.nextInt();
+			System.out.println("Enter Name of Laptop");
+			String name=scan.next();
+			System.out.println("Enter Ram of Laptop");
+			int ram=scan.nextInt();
+			System.out.println("Enter Color of Laptop");
+			String color=scan.next();
+			System.out.println("Enter Processor of Laptop");
+			String pros=scan.next();
+			System.out.println("Enter Price of Laptop");
+			int price=scan.nextInt();
+			pst=con.prepareStatement(insert);
+			pst.setInt(1, id);
+			pst.setString(2, name);
+			pst.setInt(3,ram);
+			pst.setString(4, color);
+			pst.setString(5, pros);
+			pst.setInt(6, price);
+			
+			pst.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+	
+		
+		Connection con;
+		Statement smt;
+		PreparedStatement pst;
+		ResultSet rs;
+		
+		String path="oracle.jdbc.driver.OracleDriver";
+		String url="jdbc:oracle:thin:@localhost:1521:xe";
+		String un="system";
+		String pw="system";
+		
+		try {
+			Class.forName(path);
+			System.out.println("Driver Loaded Successfully...!");
+			con=DriverManager.getConnection(url, un, pw);
+			System.out.println("Connection Established successfully..!");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		Project p =new Project();
+		
+		System.out.println("press 1----> INSERT");
+		System.out.println("Press Any ---> EXIT");
+		System.out.println("Enter your choice");
+		int choice=scan.nextInt();
+		
+		try
+		{
+		switch(choice)
+		{
+		case 1:p.insert();
+		}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:Servlet_Project" serverId="apache-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Bank_Project" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Servlet_Addition_Program" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Web_Project" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Test_Application" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:LoginForm" serverId="apache-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:com.shopNest" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SERVLET_PROJECT" serverId="apache-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Data_Enter" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:File" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Web_Laptop" serverId="apache1-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:WEB_PROJECTS" serverId="apache-tomcat-10.0.23 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Login" serverId="apache1-tomcat-10.0.23 at localhost"/>
+</modules>

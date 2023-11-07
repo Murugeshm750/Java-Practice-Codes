@@ -1,0 +1,8 @@
+127.0.0.1 - - [13/Apr/2023:15:34:11 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:34:16 +0530] "GET /Data_Enter/login.html HTTP/1.1" 200 5354
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:34:16 +0530] "GET /images/bg2.jpg HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:34:19 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:34:26 +0530] "POST /Data_Enter/Login_Validation HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:34:26 +0530] "GET /Data_Enter/error.html HTTP/1.1" 200 5400
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:34:26 +0530] "GET /images/bg2.jpg HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [13/Apr/2023:15:41:38 +0530] "GET /Data_Enter/Login_Validation?username=amar&password=amar HTTP/1.1" 405 752

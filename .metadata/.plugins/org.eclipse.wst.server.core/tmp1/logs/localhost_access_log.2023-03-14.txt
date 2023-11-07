@@ -1,0 +1,6 @@
+127.0.0.1 - - [14/Mar/2023:12:29:11 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [14/Mar/2023:12:29:14 +0530] "GET /Test_Application/adminlogin.jsp HTTP/1.1" 200 3605
+0:0:0:0:0:0:0:1 - - [14/Mar/2023:12:29:14 +0530] "GET /Test_Application/login.js HTTP/1.1" 200 1534
+0:0:0:0:0:0:0:1 - - [14/Mar/2023:12:29:14 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [14/Mar/2023:12:30:29 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [14/Mar/2023:12:30:32 +0530] "GET /Test_Application/adminlogin.jsp HTTP/1.1" 200 3606

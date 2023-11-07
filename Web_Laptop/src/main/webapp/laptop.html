@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laptop_Form</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(169, 220, 220);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box{
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+
+
+}
+.img img{
+   height: 100%;
+   width: 100%;
+   object-fit:cover;
+   object-position: bottom;
+}
+h1{
+        display: flex;
+    justify-content: center;
+}
+.inputtxt ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction:row;
+}
+.inputtxt ul li input{
+    display: flex;
+    margin-right: 300px;
+    border-style: none;
+    background:none;
+    border: 0.5px solid #0000003b;
+    border-radius: 2px;
+
+}
+.inputtxt{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.inputtxt .btn li{
+    width: 100px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    margin-left: 350px;
+    margin-top: -80px;
+    margin-bottom: 15px;
+}
+.btn li{
+    list-style: none;
+    width: 100%;
+
+}
+.btn {
+    position:inherit;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -180px;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-left: 350px;
+}
+.btn li button{
+    padding: 0px 50px;
+    width: 150px;
+}
+.tbl{
+    width: 550px;
+    height: 200px;
+    border: 1px solid;
+    margin-left: 19px;
+}
+th{
+    padding: 10px 30px;
+
+}
+
+
+
+</style>
+<body>
+ <div class="box">
+        <h1>LAPTOP FORM</h1>
+        <div class="inputtxt">
+           <ul>
+            <li> <p>Name</p>
+                <input type="text" placeholder="Laptop Name" name="lname"></li>
+            <li><p>Ram</p>
+                <input type="Number" placeholder="Laptop Ram" name="lram"></li>
+            <li><p>Processor</p>
+                <input type="text" placeholder="Laptop Processor" name="lpros"></li>
+            <li><p>Color</p>
+                <input type="text" placeholder="Laptop Color" name="lcolor"></li>
+            <li><p>Price</p>
+                <input type="text" placeholder="Laptop Price" name="lprice"></li>
+           </ul>
+        </div>
+        <div class="btn">
+            <li><button>INSERT</button></li>
+            <li><button>DELETE</button></li>
+            <li><button>UPDATE</button></li>
+            <li><button>DISPLAY</button></li>
+            <li><button>RESET</button></li>
+        </div>
+        <div class="tbl">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Ram</th>
+                    <th>processror</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

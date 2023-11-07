@@ -1,0 +1,55 @@
+import java.sql.*;
+import java.util.Scanner;
+public class Project {
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+		String path="oracle.jdbc.driver.OracleDriver";
+		String url="jdbc:oracle:thin:@localhost:1521:xe";
+		String un="system";
+		String pw="system";
+		
+		Connection con;
+		Statement smt;
+		PreparedStatement pst;
+		ResultSet rs;
+		
+		
+		try {
+			Class.forName(path);
+			System.out.println("Driver Loaded Successfully...!");
+			con=DriverManager.getConnection(url,un,pw);
+			System.out.println("Connection Established Successfully...!");
+			
+			}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+		
+		Laptop l= new Laptop();
+		
+		System.out.println("press 1----> INSERT");
+		System.out.println("Press Any ---> EXIT");
+		System.out.println("Enter your choice");
+		int choice=scan.nextInt();
+		
+		switch(choice)
+		{
+		case 1:l.insert();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

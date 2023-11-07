@@ -1,0 +1,17 @@
+127.0.0.1 - - [18/Apr/2023:10:29:18 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:29:19 +0530] "GET /Data_Enter/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:29:19 +0530] "GET /images/bg2.jpg HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:29:20 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:29:23 +0530] "GET /Data_Enter/register.html HTTP/1.1" 200 5333
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:29:45 +0530] "GET /Data_Enter/Validation?username=mugesh&email=mugesh%40gmail.com&password=mm123 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:30:58 +0530] "GET /images/bg2.jpg HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:31:07 +0530] "POST /Data_Enter/Login_Validation HTTP/1.1" 200 31
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:03 +0530] "GET /com.shopNest/login.jsp HTTP/1.1" 200 2295
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:15 +0530] "POST /com.shopNest/log HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:15 +0530] "POST /com.shopNest/log HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:15 +0530] "GET /com.shopNest/admin.jsp HTTP/1.1" 200 3902
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:15 +0530] "GET /com.shopNest/adminStyle.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:15 +0530] "GET /com.shopNest/prodImg/dell.jpg HTTP/1.1" 404 789
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:15 +0530] "GET /com.shopNest/prodImg/mobile.jpg HTTP/1.1" 404 791
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:27 +0530] "GET /com.shopNest/register.jsp HTTP/1.1" 200 1813
+0:0:0:0:0:0:0:1 - - [18/Apr/2023:10:32:27 +0530] "GET /com.shopNest/style.css HTTP/1.1" 304 -

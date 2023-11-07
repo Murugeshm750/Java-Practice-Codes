@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+            
+    
+    <wb-module deploy-name="Data_Enter">
+                        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/webapp/Web Content"/>
+                        
+        
+        <property name="context-root" value="Data_Enter"/>
+                        
+        
+        <property name="java-output-path" value="/Data_Enter/build/classes"/>
+                    
+    
+    </wb-module>
+        
+
+</project-modules>
